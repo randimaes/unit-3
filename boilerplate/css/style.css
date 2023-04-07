@@ -15,6 +15,28 @@
 .title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: bold;  
+}
 
+.map{
+    border: medium solid #9a774f;
+    fill-opacity: 100;  
+}
+
+.regions{
+    
+    fill: #d2a87d;
+    stroke: #e8c9ab;
+    stroke-width: 1px;
+}
+
+.gratLines {
+    fill: none;
+    stroke: #9a774f;
+    stroke-width: 1px;
+    stroke-opacity: 80%;
+}
+
+.gratBackground {
+    fill: #a8dadc;
 }
