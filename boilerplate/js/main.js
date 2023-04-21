@@ -1,7 +1,7 @@
 (function () {
 
     //pseudo-global variables
-    var attrArray = ["STATE", "stateparks", "parkpercapita", "foodbankpercapita", "library", "librarypercapita", "publicbookspercapita", "literacyrates", "populationwithbachelors", "studentteacherratio", "schoolspercapita"]; //list of attributes
+    var attrArray = ["STATE", "State-Parks", "Parks-per-Capita", "Food-Banks-per-Capita", "Food-Banks", "Libraries", "Libraries-per-Capita", "Publically-Available-Books-per-Capita", "Literacy-Rates", "Population-with-a-Bachelors-Degree", "Student-Teacher-Ratio", "Public-Schools-per-Capita", "Public-Schools"]; //list of attributes
     var expressed = attrArray[0]; //initial attribute
     var max = 100;
 
@@ -135,16 +135,30 @@
     //function to create color scale generator
     function makeColorScale(data) {
         var colorClasses = [
+
+            "#f7b538",
+            "#db7c26",
+            "#d8572a",
+            "#c32f27",
+            "#780116",
+// //bright oranges
+//             "#ff9e00",
+//             "#ff9100",
+//             "#ff8500",
+//             "#ff6d00",
+//             "#ff5400", 
             // "#feedde",
             // "#fdbe85",
             // "#fd8d3c",
             // "#e6550d",
             // "#a63603"
-            "#ffffd4",
-            "#fed98e",
-            "#fe9929",
-            "#d95f0e",
-            "#993404",
+//light oranges
+            // "#ffffd4",
+            // "#fed98e",
+            // "#fe9929",
+            // "#d95f0e",
+            // "#993404",
+
             // "#D4B9DA",
             // "#C994C7",
             // "#DF65B0",
@@ -267,11 +281,14 @@
                 return colorScale(d[expressed]);
             });
         //create a text element for the chart title
+        //change this?
         var chartTitle = chart.append("text")
-            .attr("x", 40)//change title position 
-            .attr("y", 40)
+            .attr("x", 50)//change title position 
+            .attr("y", 20)
             .attr("class", "chartTitle")
-            .text("Number of Variable " + expressed[3] + " in Each State");
+            .text(expressed[3] + " By State");
+            
+       
 
 
         //how do I change this to have 0 at the bottom
@@ -390,13 +407,13 @@
                 } else {
                     return "#ccc";
                 }
-                //uhhh I heard gareth say something like this below
-                //var max = d3.
+                
             })
 
         var chartTitle = d3
             .select(".chartTitle")
-            .text(expressed + " in each state");
+            .text(expressed + " by state")
+            
         //this log is working
         //console.log("sup")
     }

@@ -1,4 +1,10 @@
 /*Add CSS styles here*/
+
+/* @font-face {
+    font-family: 'Euphorigenic';
+    src: url("lib/euphorigenic/euphorig.ttf") format(ttf);
+} */
+
 .axis path,
 .axis line {
     fill: none;
@@ -12,11 +18,11 @@
     font-size: 0.9em;
 }
 
-.title {
-    font-family: 'Times New Roman', Times, serif;
+/* .title {
+    font-family: Euphorigenic;
     font-size: 1.5em;
     font-weight: bold;  
-}
+} */
 
 .map{
     border: transparent;
@@ -27,7 +33,7 @@
     background-color: transparent;
     border: transparent;
     float: right;
-    margin: 10px 20px 0 0;
+    margin: 10px 10px 0 0;
 }
 
 .regions{
@@ -49,9 +55,13 @@
 }
 
 .chartTitle {
-    font-family: serif;
+    font-family: "short-films", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.5em;
     font-weight: bold;
+    color: white;
+
 }
 
 .chart {
@@ -125,14 +135,23 @@ option {
 #title {
     position: center;
     text-align: center;
-    color: #d95f0e;
-    font-family:'Times New Roman', Times, serif;
+    color: #c32f27;
+    font-family: "short-films", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
 }
 
-#p{
-    padding-top: 100%;
-    
-    
+p{
+    font-family: "p22-typewriter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
    
 }
+h6{
+    font-family: "short-films", sans-serif;
+    font-style: normal;
+    font-size:x-small;
+}
+
 
